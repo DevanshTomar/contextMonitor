@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">contextMonitor</string>
+    <string name="breathe">Breathe</string>
+    <string name="heart">Heart</string>
+</resources>
