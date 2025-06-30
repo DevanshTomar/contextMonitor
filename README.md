@@ -1,5 +1,43 @@
-Ans 1: For my academic project, I'm planning to use the Health-Dev framework to build a context-sensing app. It's a pretty neat tool that simplifies app development for health monitoring. To use it, I need to provide four key specifications. First, I'll outline the Sensor Specs, detailing which sensors I'll use (like an ECG for heart rate) and how they'll collect data. Then, I'll cover Network Specs, describing how the sensors will communicate (probably via Bluetooth). Next comes Smartphone Specs, where I'll define the user interface and any on-phone data processing. Finally, I'll provide Algorithm Specs, listing the algorithms needed to analyze sensor data, like heart rate calculations. Once I've nailed down these specs, Health-Dev will generate the necessary code, letting me focus more on the health monitoring aspects rather than getting bogged down in complex coding. It's a bit of work upfront, but it should make the development process much smoother.
+# Context Monitor
 
-Ans 2: The bHealthy application suite offers a comprehensive platform for developing a unique wellness app that leverages physiological data. To create my app, I'll start by integrating various sensors like ECG, EEG, and accelerometers to collect real-time data on users' physical and mental states. Using the suite's evaluation features, I'll analyze this data to detect emotional states and provide personalized recommendations for activities or other apps that could enhance well-being. I can also develop engaging training applications, such as PETPeeves or BrainHealth, which involve users in health-promoting exercises or neurofeedback sessions. To round out the app's functionality, I'll use the suite's reporting capabilities to aggregate data from multiple activities and generate insightful wellness reports. This comprehensive approach will allow me to create an application that not only detects the user's context but also offers tailored feedback and suggestions to actively improve their health.
+## Overview
+Context Monitor is an Android application designed to measure and monitor vital signs like heart rate and respiratory rate. Utilizing smartphone sensors and the camera, it captures health data and stores it locally, providing insights into physiological conditions.
 
-Ans 3: Mobile computing extends far beyond mere app development, encompassing a rich tapestry of functionalities and interactions. At its core, it involves the intricate process of collecting data from a myriad of sensors and transforming it into meaningful insights. For example, in my project, I'm harnessing smartphone sensors to capture vital signs like heart rate and respiratory rate. But mobile computing doesn't stop at data collection; it's about understanding the user's context – their environment, activities, and preferences – to deliver tailored information and services. This contextual awareness is crucial for creating truly responsive and intelligent mobile systems. Furthermore, effective mobile computing incorporates feedback loops, using the gathered data to inform and engage users, thereby enhancing their overall experience. It also often necessitates seamless integration with various systems and databases, as exemplified in my project's use of RoomDB or RealmDB for data storage. In essence, mobile computing is a holistic field that combines sensing, analysis, context-awareness, user interaction, and system integration to create powerful, portable computing experiences.
+## Features
+- **Heart Rate Measurement:** Uses CameraX to record and analyze heart rate.
+- **Respiratory Rate Measurement:** Utilizes accelerometer for capturing respiratory patterns.
+- **Symptom Tracking:** Allows users to log symptoms using an interactive UI.
+- **Local Data Storage:** Saves health data using Room Database.
+
+## Technologies Used
+- **Kotlin**: For Android development.
+- **CameraX**: For camera functionalities.
+- **Room**: Local database solution for data persistence.
+- **View & Data Binding**: For efficient UI management.
+
+## Setup Instructions
+
+### Prerequisites
+- Android Studio installed
+- Minimum Android SDK level 29
+
+### Getting Started
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/your_username/contextMonitor.git
+   ```
+2. **Open in Android Studio**
+   - Launch Android Studio.
+   - Select 'Open an existing Android Studio project' and choose the cloned directory.
+3. **Build the Project**
+   - Sync the project with Gradle files.
+   - Run the app on an Android emulator or a physical device.
+
+## Usage
+- **Measure Heart Rate**: Navigate to the main screen and tap 'Heart Rate'.
+- **Record Respiratory Rate**: Tap on 'Respiratory' to start measuring via accelerometer.
+- **Log Symptoms**: Go to the 'Symptoms' section and provide entries for various symptoms.
+
+## Future Enhancements
+- **Cloud Sync**: Integration with cloud services for data backup.
+- **Advanced Analytics**: Employing machine learning for predictive insights.
